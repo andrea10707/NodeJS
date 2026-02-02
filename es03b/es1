@@ -1,0 +1,16 @@
+let addizione = (n1, n2) => { return n1 + n2 };
+let sottrazione = (n1, n2) => { return n1 - n2 };
+let moltiplicazione = (n1, n2) => {return n1 * n2 };
+let divisione = (n1, n2) => {return n1 / n2 };
+
+let array = [
+	addizione,
+	sottrazione,
+	moltiplicazione,
+	divisione,
+];
+
+console.log("Somma di 4 e 5", array[0](4, 5));
+console.log("Sottrazione di 19 e 9", array[1](19,9));
+console.log("Moltiplicazione di 9 e 3", array[2](9,3));
+console.log("Divisione di 69 e 4", array[3](69,4));
